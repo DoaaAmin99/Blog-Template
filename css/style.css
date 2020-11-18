@@ -7,21 +7,27 @@
 .clear{
     clear: both;
 }
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+/* Header Part */
 header{
     background-color:#eee ;
     border-bottom: 2px solid #e64b1d ;
     border-bottom-right-radius: 60%;
 }
-.container{
-    width: 95%;
-    margin: auto;
-}
+
+/* styling Navbar */
 nav{
     
+    font-family: sans-serif;
     background-color: #ffffff;
     border-radius: 25px;
     margin-top: 20px;
     text-transform: uppercase;
+    font-size: 15px;
 }
 
 header .logo{
@@ -33,8 +39,6 @@ header .logo{
     border: 4px solid #e64b1d;
     margin: 5px 40px;
     border-radius:5px ;
-    
-    
 }
 
 header nav ul{
@@ -42,6 +46,7 @@ header nav ul{
     float: left;
     margin-left: 200px;
     margin-top: 10px;
+    list-style: none;
 }
 header nav li{
     display: inline-block;
@@ -58,38 +63,34 @@ header nav li a{
 a:focus, a:hover{
     
     color: #e64b1d;
-  transform: translateY(-1px);
+    transform: translateY(-1px);
 }
 
 .btn1{
-    width: 18%;
+    width: 14%;
     float: left;
     color: #ffffff;
     border: none;
     font-size: 12px;
     background-color:#e64b1d ;
     border-radius: 25px;
-    text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     padding: 20px;
     margin:10px 0px ;
+    margin-left: 50px;
     cursor: pointer;
 }
 .btn1:hover{
     background-color: #ffffff;
     color: #e64b1d;
     transition-duration: 0.4s;
-    border: 2px solid#e64b1d;
 }
 
-ul{
-    list-style: none;
-}
 
+/* self definition */
 .intro{
     margin:84px 0px 20px 200px;
-    
+ 
 }
 h2{
     color: #e64b1d;
@@ -101,61 +102,69 @@ h1, h3{
     text-transform: capitalize;
     margin-bottom: 5px;
 }
-.content{
-    font-size: 18px;
+.intro .content{
+    font-size: 17px;
     color: #999999;
     font-family: sans-serif;
 }
-.pic{
+.pic1{
     float: right;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 2px solid #ffffff;
     margin:-15% 300px -120px 0px ;
     box-shadow: 10px 10px 5px #aaaaaa;
     width: 300px;
     height: 333px;
 }
-.btn{
+.btn2{
     text-transform: capitalize;
     width: 15%;
-    padding: 20px;
+    padding: 10px;
     color: #ffffff;
-    background-color: #040433;
+    background-color: #0d0d13;
     font-size: 12px;
     border-radius: 25px;
     margin: 10px;
 }
-.part2 .btn:hover, .btn:hover, .part2 .btn:focus, .icon:hover, .part4 .btn:hover{
-    background-color: #e64b1d;
-    
+.part2 .btn2:hover, .btn2:hover, .part2 .btn2:focus, .icon:hover, .part4 .btn2:hover, .btn2:focus{
+    background-color: #e64b1d; 
     transition-duration: 0.4s;
     border: 2px solid#e64b1d;
+    color: #ffffff;
 }
 .part2, .part4{
     width: 85%;
     margin: auto;
+    margin-top: 15px;
+    padding: 50px;
     position: relative;
 }
-.part2 img{
+/* Life struggle story */
+.part2 .pic2{
     width: 350px;
-    height: 500px;
+    height: 450px;
     border: 2px solid #999999;
     border-radius: 10px;
-    margin: 0px 100px 100px;
+    margin: 135px 100px 100px;
     float: left;
 }
-.part2 .btn{
+.part2 .btn2{
     position: absolute;
     color: black;
-  background-color: #ffffff;
-    margin-top: 400px;
-    left: 16%;
+    background-color: #ffffff;
+    margin-top: 520px;
+    left: 20%;
 }
-.str{
+
+.struggle{
     margin-top: 130px;
 }
-.part2 .str .content{
+.part2 .struggle .content{
     font-size: 15px;
+    color: #999999;
+    font-family: sans-serif;
+    width: 77%;
+    margin-left: 24%;
 }
 .skills{
     margin-top: 20px;
@@ -165,20 +174,28 @@ h4{
     margin: 10px;
     font-size: 15px;
 }
+
+/* progress bar */
 progress{
-    width: 52%;
     height: 10px;
     color: #e64b1d;
     border: none;
-    width: 52%;
+    width: 47%;
     height: 5px;
 }
-.precentage{
-    margin-left: 555px;
-    
-    
-}
 
+.precentage80{
+    margin-left: 353px;
+}
+.precentage65{
+    margin-left: 341px;
+}
+.precentage45{
+    margin-left: 317px;
+}
+.precentage55{
+    margin-left: 332px;
+}
   
   progress::-webkit-progress-bar { 
     background-color: #eeeeee; 
@@ -196,6 +213,8 @@ progress{
 .progress4::-webkit-progress-value { 
     background-color: lime !important; 
 } 
+
+/* work process section */
 .container .process{
     background-color: #eee;
     border-bottom: 2px solid #e64b1d ;
@@ -206,26 +225,38 @@ progress{
 .container .process h3, .part4 .expertise {
     text-align: center;
     margin: 20px 0px;
+    padding: 20px;
 }
 .container .process .icons{
     text-align: center;
     font-size: 70px;
-    word-spacing: 150px;
-    margin: 20px;
+    word-spacing: 85px;
     color: #e64b1d;
-    margin: -36px 0px 20px;
+    margin: -58px 0px 20px;
     
 
+}
+.icon1{
+    background-color: #eee;
+    border: 2px dashed #f3aa92;
+    border-radius: 50%;
+    font-size: 57px;
+    padding: 26px;
+}
+.icon1:hover{
+    color: #ffffff;
+    background-color: #e64b1d;
+    border-color: #ffffff;
 }
 
 
 hr{
     margin-top: 50px;
-    color: #e64b1d;
-    width: 75%;
+    color: #e97b5a;
+    width: 60%;
     text-align: center;
     margin: auto;
-    border: 1px solid #e64b1d;
+    border: 1px solid #e97b5a;
     margin-top: 100px;
 }
 .wireframe{
@@ -233,27 +264,40 @@ hr{
     margin-left: -200px;
     font-size: 20px;
     text-transform: capitalize;
+    margin-top: 25px;
     margin-bottom: 50px;
 }
-  
-.main
+
+  /* expertise section */
+  .card h4{
+      font-size: 22px;
+  }
+  .card .content{
+      font-size: 14px;
+      font-family: sans-serif;
+      color: #999999;
+  }
+  .icon .content{
+      font-size: 12px;
+  }
+.icon2
 {
     color: #e64b1d;
-    font-size: 80px;
+    font-size: 50px;
+    border: 1px #f3aa92;
+    padding: 20px;
 }
-.main:hover{
-    color: #ffffff;
-}
-.icon
+
+.card
 {
   float: left;
-  width:30%;
+  width:29%;
   padding: 22px;
-  margin: 18px;    
+  margin: 20px;    
   text-align: center;
   background-color: #eee;
   border-radius: 10px;
-  height: 400px;
+  height: 300px;
 }
 
 .cards
@@ -261,17 +305,31 @@ hr{
     margin: 6px;
     text-align: center;
     clear: both;
+    display: inline;
 
 }
-.cards .btn{
+.cards .btn2{
     
   float: left;
-  width:20%;
-  margin-left: 20px;
-  padding: 22px;    
+  width:62%;
+  margin-left: 20%;
+  margin-top: 9%;
+  padding: 12px;    
   text-align: center;
   color: black;
   background-color: #ffffff;
   text-transform: uppercase;
     
+}
+
+.card:hover {
+    background: linear-gradient(45deg,#e97b5a,#fdd4c8);
+    color: #ffffff;
+    transition-duration: 0.4s;
+    transform: translateY(-1px);
+    box-shadow: 1px 2px 5px #999;
+}
+.card:hover .content{
+    color: #ffffff;
+    transition-duration: 0.4s;
 }
